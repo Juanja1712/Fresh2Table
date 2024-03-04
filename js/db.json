@@ -1,0 +1,87 @@
+{
+  "usuarios": [
+    {
+      "name": "Veronica",
+      "email": "veronica@gmail.com",
+      "age": "12",
+      "address": "cra 47 #7-13",
+      "password": "123",
+      "shopHistory": [
+        {
+          "id": 1,
+          "shop": [
+            {
+              "name": "manzana",
+              "id": 1,
+              "image": "manzana.png",
+              "pricePound": 3000,
+              "category": "frutas",
+              "from": "Rionegro",
+              "description": "Tampoco tiene potaxio",
+              "quantity": 2
+            },
+            {
+              "name": "sandia",
+              "id": 2,
+              "image": "sandia.png",
+              "pricePound": 10000,
+              "category": "frutas",
+              "from": "El Retiro",
+              "description": "No tiene potaxio",
+              "quantity": 3
+            }
+          ],
+          "price": 230000,
+          "date": "2024-01-29"
+        }
+      ],
+      "id": "789"
+    },
+    {
+      "id": "1088",
+      "name": "Manuela",
+      "email": "manuela@gmail.com",
+      "password": "123",
+      "age": "30",
+      "address": "cra 47",
+      "shopHistory": [
+        {
+          "id": 1,
+          "shop": [
+            {
+              "name": "manzana",
+              "id": 1,
+              "image": "manzana.png",
+              "pricePound": 3000,
+              "category": "frutas",
+              "from": "Rionegro",
+              "description": "Tampoco tiene potaxio",
+              "quantity": 2
+            },
+            {
+              "name": "sandia",
+              "id": 2,
+              "image": "sandia.png",
+              "pricePound": 10000,
+              "category": "frutas",
+              "from": "El Retiro",
+              "description": "No tiene potaxio",
+              "quantity": 3
+            }
+          ],
+          "price": 230000,
+          "date": "2024-01-29"
+        }
+      ]
+    },
+    {
+      "name": "Valentina",
+      "email": "valentina@gmail.com",
+      "age": "24",
+      "address": "7890",
+      "password": "456",
+      "shopHistory": [],
+      "id": "1234"
+    }
+  ]
+}

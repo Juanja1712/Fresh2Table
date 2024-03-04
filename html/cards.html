@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/cards.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Frutas</title>
+</head>
+
+<body>
+
+  <!--------------NAV-------------->
+  <header>
+    <!-- Navbar  -->
+    <nav class="navbar">
+      <!-- Menu -->
+      <div class="menu">
+        <img src="../Img/menu.svg" alt="">
+        <!-- Menu bar -->
+
+      </div>
+      <!-- Logo -->
+      <div class="logo-header">
+        <a href="index.html"><img src="../Img/Fresh.svg" alt="" /></a>
+
+      </div>
+      <!-- Shop -->
+      <div class="menu">
+        <img  class="icono-selector-cart"src="../Img/car-shopping.svg" alt="">
+        <span id="numeroProductosEnCarrito"></span>
+        <a href="home.html"><img src="../Img/Icons/user.svg" alt="" width="30px"></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--------------BUSCADOR-------------->
+
+  <!--input buscador-->
+  <div class="search">
+      <div class="search-container">
+        <input type="text" id="input-search" placeholder="¿Qué producto buscas?">
+      </div>
+  </div>
+  
+  <!--------------VECTORES DE BÚSQUEDA-------------->
+
+  <div class="img-buscadores">
+      <div class="img-buscadores-container">
+          <div class="icono-fruta">
+              <img class="incono-selector fruits" src="../Img/iconoFruta.svg" width="95" alt="" srcset="">
+              <h1 class="titulo-frutas">FRUTAS</h1>
+          </div>
+          
+          <div class="icono-verdura">
+              <img class="incono-selector vegetables" src="../Img/iconoVerdura.svg" width="95" alt="">
+              <h1 class="titulo-verduras">VERDURAS</h1>
+          </div>
+          
+      </div>
+  </div>
+
+  <!--------------CARDS-------------->
+
+  <main class="cards" id="cardContainer">
+      
+  </main>
+
+  <!--------------MODAL-------------->
+
+  <div class="modalContainerMain scroll-container">
+    <div class="header-modal">
+      <h1 style="color: black;">Productos</h1>
+      <button class="close-button">X</button>
+    </div>
+
+    <div class="containerPriceModal">
+      <a href="carrito.html" class="irComprar"><p class="totalPrice">Realizar compra $ 0</p></a>
+    </div>
+    
+    <div class="modalContainer">
+      
+    </div>
+
+  </div>
+  
+  <!--------------FOOTER-------------->
+
+  <footer>
+    <div class="container-footer">
+      <div class="logo-footer">
+        <img class="icono-selector" src="/Img/Fresh.svg" height="150" alt="" />
+        <a href="">Fresh2Table</a>
+      </div>
+      <div class="redes-sociales">
+        <a href=""><img src="../Img/Icons/instagram.svg" alt="" width="40"></a>
+        <a href=""><img src="../Img/Icons/MdiFacebookBox.svg" alt="" width="50"></a>
+        <a href=""><img src="../Img/Icons/youtube.svg" alt="" width="50"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/products.json"></script>
+  <script src="../js/function.js"></script>
+</body>
+</html>

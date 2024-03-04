@@ -1,0 +1,350 @@
+@import url(Layout.css);
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E8E3DC;
+}
+
+
+/* ------------------------------------------- */
+header{
+  display: flex;
+}
+
+/*---------------------NAV-------------------------*/
+
+.icono-selector-cart{
+  cursor: pointer;
+}
+
+#numeroProductosEnCarrito{
+  color: white;
+}
+
+
+/*--------------------BUSCADORES--------------------------*/
+
+.frutas-verduras{
+  text-align: center;
+  padding: 2rem;
+}
+
+.search{
+  padding-top: 6rem;
+}
+
+.search-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#input-search{
+  border-radius: 1rem;
+  border: 4px solid #008000;
+  width: 30rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.img-buscadores-container{
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  padding: 2rem;
+
+}
+
+.icono-fruta, .icono-verdura{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.icono-fruta:hover ,.icono-verdura:hover {
+  color: #008000;
+  filter: invert(19%) sepia(100%) saturate(3709%) hue-rotate(99deg) brightness(100%) contrast(102%);
+
+}
+
+/*------------------------CARDS----------------------*/
+
+
+.cards {
+  padding: 1rem;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  margin: auto;
+  margin-left: 14%;
+  
+}
+
+.separador {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 60%;
+  height: 28rem;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  
+}
+
+figure {
+
+  overflow: hidden;
+  outline: none !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+
+  & img {
+    height: 95%;
+    width: 85%;
+  }
+}
+
+
+.titleProduct {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #23211f;
+  text-align: center;
+}
+
+.description{
+margin-top: 18px;
+}
+
+.productDescription {
+  font-size: 17px;
+
+}
+
+.price {
+  margin-top: 8px;
+}
+
+
+.cart {
+  margin: 1rem;
+}
+
+p {
+  margin-left: 1rem;
+}
+
+.buttonsAddCart {
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 0.95;
+  border: 1px solid #00aa4d;
+  background-color: #00aa4d;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  
+
+  &:hover {
+    color: #008000 !important;
+    background-color: white;
+    border: 1px solid #008000;
+  }
+}
+
+.textButtonsAddCart{
+  text-align: center;
+}
+
+.filtro{
+  display: none;
+}
+
+/*------------------------MODAL----------------------*/
+
+.modalContainerMain {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  width: 23rem; 
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  height: 71%;
+  z-index: 1000;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 2rem;
+
+}
+
+.scroll-container{
+  display: none;
+  width: 23rem; 
+  height: 60%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.header-modal{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.containerPriceModal{
+  margin-top: 20px;
+}
+
+.totalPrice{
+  background-color: #008000;
+  height: 3rem;
+  color:#fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.irComprar{
+  text-decoration: none;
+}
+
+.close-button{
+  border-radius: 6rem;
+  width: 40%;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  border: 1px solid #008000;
+  background-color: #008000;
+  
+  
+  &:hover {
+    color: #008000 !important;
+    background-color: white;
+    border: 2px solid #008000;
+  }
+}
+
+.modalContainer{
+  display: grid;
+  gap: 20px;
+  margin-top: 2rem;
+  
+}
+
+.modalContainer p{
+  color: black;
+  text-align: center;
+}
+
+.modalContent{
+  width: 100%;
+  border: 3px solid green;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;  
+  background-color: #e8e3dc56;
+  padding: 8px;
+}
+
+.cantidadCarritoModal{
+  text-transform: uppercase;
+}
+
+.textContentModal{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+.plus, .minus{
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+  height: 40%;
+  background-color: transparent;
+  border: 0;
+  color: #008000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ---------------------FOOTER---------------------- */
+
+
+.xd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #60350193;
+  margin-top: 5rem;
+}
+
+.container-footer {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.container-footer a {
+  text-decoration: none;
+  color: #fff;
+  ;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.logo-footer img {
+  width: 80px;
+}
+
+.redes-sociales{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
